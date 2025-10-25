@@ -57,7 +57,7 @@ nav .right a span{
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
-    margin: 50px 0;
+    margin: 80px 0 140px;
     gap: 40px;
 }
 .hero-section .text{
@@ -65,6 +65,10 @@ nav .right a span{
 }
 .hero-section .text h2{
     font-size: 45px;
+    margin-bottom: 10px;
+}
+.hero-section .text p{
+    width: 95%;
 }
 .hero-section .text .links{
     margin-top: 25px;
@@ -88,7 +92,7 @@ nav .right a span{
     justify-content: right;
 }
 .hero-section .headshot img{
-    width: 300px;
+    width: 350px;
     border-radius: 50%;
 }
 
@@ -101,9 +105,12 @@ nav .right a span{
 .skills-section h2{
     text-align: center;
     font-size: 35px;
+    margin-bottom: 10px;
 }
 .skills-section .text{
     margin-bottom: 20px;
+    width: 90%;
+    margin: 20px auto;
     text-align: center;
 }
 .skills-section .cells{
@@ -137,6 +144,9 @@ nav .right a span{
     .hero-section .headshot h2{
         font-size: 35px;
     }
+        .hero-section .headshot img{
+        width: 300px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -165,10 +175,16 @@ nav .right a span{
     /* Hero Section */
     .hero-section{
         padding: 0 20px;
-        margin-bottom: 150px;
+        margin-bottom: 100px;
     }
     .hero-section .text h2{
         font-size: 30px;
+    }
+    .hero-section .text p{
+        width: 100%;
+    }
+    .hero-section .headshot img{
+        width: 250px;
     }
 
     /* Content 2: Skills Section */
