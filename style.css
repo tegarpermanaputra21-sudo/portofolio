@@ -56,15 +56,16 @@ nav .right a span{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
     padding: 0 50px;
-    margin: 80px 0 140px;
+    margin: 80px auto 140px;
     gap: 40px;
 }
 .hero-section .text{
     flex: 5;
 }
 .hero-section .text h2{
-    font-size: 45px;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 .hero-section .text p{
@@ -92,7 +93,7 @@ nav .right a span{
     justify-content: right;
 }
 .hero-section .headshot img{
-    width: 350px;
+    width: 300px;
     border-radius: 50%;
 }
 
@@ -181,15 +182,27 @@ nav .right a span{
         font-size: 30px;
     }
     .hero-section .text p{
+        font-size: 14px;
         width: 100%;
     }
     .hero-section .headshot img{
         width: 250px;
     }
+    .hero-section .text .links a{
+        font-size: 14px;
+        padding: 5px 8px;
+    }
 
     /* Content 2: Skills Section */
     .skills-section{
         padding: 0 20px;
+    }
+    .skills-section h2{
+        font-size: 28px;
+    }
+    .skills-section .text p{
+        font-size: 14px;
+        width: 100%;
     }
     .skills-section .cells .cell span{
         font-size: 14px;
