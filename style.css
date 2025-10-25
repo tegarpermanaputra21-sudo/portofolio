@@ -66,6 +66,12 @@ nav .right a span{
 .hero-section .text h2{
     font-size: 45px;
 }
+.hero-section .text p{
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #333333;
+}
 .hero-section .text .links{
     margin-top: 25px;
 }
@@ -101,6 +107,13 @@ nav .right a span{
 .skills-section h2{
     text-align: center;
     font-size: 35px;
+}
+.skills-section p{
+    text-align: center;
+    margin-top: 10px;
+    color: #333333;
+    font-size: 18px;
+    line-height: 1.6;
 }
 .skills-section .text{
     margin-bottom: 20px;
