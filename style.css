@@ -121,6 +121,10 @@ nav .right a span{
     border: 1.5px solid #d3d3d3;
     border-radius: 5px;
     gap: 10px;
+    transition: 0.1s;
+}
+.skills-section .cells .cell:hover{
+    border: 1.5px solid var(--text-color);
 }
 .skills-section .cells .cell img{
     width: 30px;
@@ -161,6 +165,7 @@ nav .right a span{
     /* Hero Section */
     .hero-section{
         padding: 0 20px;
+        margin-bottom: 150px;
     }
     .hero-section .text h2{
         font-size: 30px;
