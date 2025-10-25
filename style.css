@@ -3,18 +3,15 @@
     --link-color: #4a76ee;
     --background-color: #eeeff1;
 }
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 html{
     scroll-behavior: smooth;
 }
-
 body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
@@ -58,7 +55,7 @@ nav .right a span{
     align-items: center;
     width: 90%;
     padding: 0 50px;
-    margin: 80px auto 140px;
+    margin: 80px auto 200px;
     gap: 40px;
 }
 .hero-section .text{
@@ -101,12 +98,12 @@ nav .right a span{
 /* Content 2: Skills Section */
 .skills-section{
     padding: 0 50px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 .skills-section h2{
     text-align: center;
     font-size: 35px;
-    margin-bottom: 10px;
+    margin-bottom: -10px;
 }
 .skills-section .text{
     margin-bottom: 20px;
@@ -141,6 +138,43 @@ nav .right a span{
     border-radius: 5px;
 }
 
+
+/* Content 3: Testimony Section */
+.testimony-section{
+    padding: 0 50px;
+    margin: 100px auto;
+    width: 90%;
+}
+.testimony-section h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.testimony-section .group{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.testimony-section .group .person-details{
+    text-align: center;
+    flex: 2;
+}
+.testimony-section .group .person-details img{
+    width: 200px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.testimony-section .group .person-details p{
+    font-weight: 600;
+}
+.testimony-section .group .person-details p:last-child{
+    font-weight: normal;
+}
+.testimony-section .group .text{
+    padding-top: 50px;
+    flex: 8;
+}
+
 @media (max-width: 850px) {
     .hero-section .headshot h2{
         font-size: 35px;
@@ -151,8 +185,21 @@ nav .right a span{
 }
 
 @media (max-width: 700px) {
+    /* Content 1: Hero Section */
     .hero-section{
         flex-direction: column-reverse;
+    }
+
+    /* Content 3: Testimony Section */
+    .testimony-section h2{
+        text-align: center;
+        margin: 0 auto 20px;
+    }
+    .testimony-section .group{
+        flex-direction: column;
+    }
+    .testimony-section .group .text{
+        padding: 0;
     }
 }
 
