@@ -29,11 +29,9 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 0px 50px;
     height: 80px;
 }
-
 nav .left a{
     color: var(--text-color);
     font-size: 22px;
@@ -68,6 +66,14 @@ nav .right a span{
     }
     nav .right a span{
         display: none;
+    }
+
+    /* Hero Section */
+    .hero-section{
+        padding: 0 20px;
+    }
+    .hero-section .text h2{
+        font-size: 30px;
     }
 }
 
@@ -105,8 +111,19 @@ nav .right a span{
 }
 .hero-section .headshot{
     flex: 2;
+    display: flex;
+    justify-content: right;
 }
 .hero-section .headshot img{
     width: 300px;
     border-radius: 50%;
+}
+
+@media (max-width: 740px) {
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+    .hero-section .headshot img{
+        width: 300px;
+    }
 }
