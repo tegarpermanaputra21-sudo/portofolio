@@ -341,7 +341,10 @@ nav .right a span{
     .contact-section h2{
         font-size: 28px;
     }
-    .contact-section .group p{
+    .contact-section .group .text p{
+        font-size: 14px;
+    }
+    .contact-section .group form{
         font-size: 14px;
     }
 }
