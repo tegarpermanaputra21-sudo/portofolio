@@ -344,7 +344,7 @@ nav .right a span{
     .contact-section .group .text p{
         font-size: 14px;
     }
-    .contact-section .group label{
+    .contact-section .group form label{
         font-size: 14px;
     }
 }
