@@ -251,6 +251,7 @@ nav .right a span{
     .skills-section .text p{
         font-size: 14px;
         width: 100%;
+        text-align: center;
     }
     .skills-section .cells .cell span{
         font-size: 14px;
@@ -264,9 +265,10 @@ nav .right a span{
         width: 100px;
     }
     .testimony-section .group p{
-        font-size: 14px;
+        font-size: 13px;
     }
     .testimony-section .group .text{
+        text-align: justify;
         font-size: 14px;
     }
 }
