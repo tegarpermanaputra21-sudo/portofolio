@@ -28,3 +28,67 @@
 
 <img src="images/settings-GithubIo.png">
 
+---
+
+## B. Struktur Folder dan File Proyek
+
+Struktur folder dan file yang digunakan dalam proyek portofolio adalah sebagai berikut:
+
+portofolio/
+│
+├── index.html
+├── style.css
+├── README.md
+└── images/
+├── create-repo.png
+├── file-repo.png
+└── settings-GithubIo.png
+
+
+### Penjelasan:
+- **index.html** → halaman utama website portofolio.  
+- **style.css** → file berisi aturan tampilan (warna, font, layout, dll).  
+- **README.md** → file dokumentasi berisi penjelasan proyek (file ini).  
+- **images/** → folder penyimpanan gambar, termasuk hasil tangkapan layar saat proses pembuatan repository dan pengaturan GitHub Pages.  
+
+Semua file ini diunggah ke repository GitHub agar dapat dideploy ke **GitHub Pages** dan diakses secara publik.
+
+---
+
+## C. Cara Menghubungkan File CSS ke HTML
+
+Agar tampilan dari `style.css` muncul di web, file CSS harus dihubungkan ke HTML menggunakan tag `<link>` di dalam elemen `<head>`.
+
+### Contoh isi file `index.html`
+```
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Pribadi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Halo, Saya Tegar</h1>
+  <p>Selamat datang di portofolio pribadi saya!</p>
+</body>
+</html>
+```
+
+### Contoh isi file `style.css`
+```
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #00bfff;
+}
+```
+
