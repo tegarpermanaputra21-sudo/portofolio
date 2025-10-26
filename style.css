@@ -15,6 +15,8 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
 }
 a{
     color: var(--link-color);
@@ -152,7 +154,7 @@ nav .right a span{
 .testimony-section .group{
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
 }
 .testimony-section .group .person-details{
     text-align: center;
@@ -174,6 +176,52 @@ nav .right a span{
     padding-top: 50px;
     flex: 8;
 }
+
+/* Content 4: Contact Section */
+.contact-section{
+    padding: 0 50px;
+    margin: 100px auto;
+    width: 90%;
+}
+.contact-section h2{
+    font-size: 35px;
+}
+.contact-section .group{
+    display: flex;
+    gap: 50px;
+}
+.contact-section .group .text{
+    flex: 3;
+    margin-top: 20px;
+}
+.contact-section .group form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.contact-section .group form input,
+.contact-section .group form textarea{
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+.contact-section .group form button{
+    font-size: 14px;
+    color: #fff;
+    background-color: var(--link-color);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.contact-section .group form button:hover{
+    filter: brightness(.9);
+}
+
 
 @media (max-width: 850px) {
     .hero-section .headshot h2{
@@ -200,6 +248,11 @@ nav .right a span{
     }
     .testimony-section .group .text{
         padding: 0;
+    }
+
+    /* Content 4: Contact Section */
+    .contact-section .group{
+        flex-direction: column;
     }
 }
 
@@ -243,7 +296,7 @@ nav .right a span{
     /* Content 2: Skills Section */
     .skills-section{
         padding: 0 20px;
-        margin-bottom: 70px;
+        margin-bottom: 80px;
     }
     .skills-section h2{
         font-size: 28px;
@@ -258,6 +311,9 @@ nav .right a span{
     }
 
     /* Content 3: Testimony Section */
+    .testimony-section{
+        padding: 0 20px;
+    }
     .testimony-section h2{
         font-size: 28px;
     }
@@ -270,5 +326,10 @@ nav .right a span{
     .testimony-section .group .text{
         text-align: center;
         font-size: 14px;
+    }
+
+    /* Content 4: Contact Section */
+    .contact-section{
+        padding: 0 20px;
     }
 }
