@@ -220,7 +220,7 @@ nav .right a span{
         display: none;
     }
 
-    /* Hero Section */
+    /* Content 1: Hero Section */
     .hero-section{
         padding: 0 20px;
         margin-bottom: 100px;
@@ -243,6 +243,7 @@ nav .right a span{
     /* Content 2: Skills Section */
     .skills-section{
         padding: 0 20px;
+        margin-bottom: 100px;
     }
     .skills-section h2{
         font-size: 28px;
@@ -252,6 +253,20 @@ nav .right a span{
         width: 100%;
     }
     .skills-section .cells .cell span{
+        font-size: 14px;
+    }
+
+    /* Content 3: Testimony Section */
+    .testimony-section h2{
+        font-size: 28px;
+    }
+    .testimony-section .group img{
+        width: 100px;
+    }
+    .testimony-section .group p{
+        font-size: 14px;
+    }
+    .testimony-section .group .text{
         font-size: 14px;
     }
 }
