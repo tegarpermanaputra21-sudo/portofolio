@@ -342,7 +342,7 @@ footer{
         width: 100%;
     }
     .hero-section .headshot img{
-        margin: -30px auto;
+        margin: -60px auto 5px;
         width: 225px;
     }
     .hero-section .text .links a{
