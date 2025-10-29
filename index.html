@@ -11,10 +11,11 @@
     <script src="https://kit.fontawesome.com/761788be2d.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aos/aos.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav>
+    <nav data-aos="fade-down" data-aos-duration="1000" data-aos-delay="150">
         <div class="left">
             <a href="#hero">Noth1ng</a>
         </div>
@@ -38,11 +39,11 @@
     <!-- Content 1: Hero Section -->
     <section id="hero" class="hero-section">
         <div class="text">
-            <h2>Hello, I'm Tegar</h2>
-            <p>I'm a Software Engineering (RPL) student who is currently learning and exploring the world of Web Development.
+            <h2 data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="150">Hello, I'm Tegar</h2>
+            <p data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="150">I'm a Software Engineering (RPL) student who is currently learning and exploring the world of Web Development.
 This repository contains my learning progress, practice projects, and school assignments, mainly focused on frontend and backend web development.</p>
 
-            <div class="links">
+            <div class="links" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
             <a href="#skills">
                 <i class="fa-solid fa-code"></i>
                 <span>Skills</span>
@@ -59,7 +60,7 @@ This repository contains my learning progress, practice projects, and school ass
         </div>
 
         <div class="headshot">
-            <img src="images/Yoru by @Mithamaito_Shen.jpg" alt="profile">
+            <img src="images/Yoru by @Mithamaito_Shen.jpg" alt="profile" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0">
         </div>
     </section>
 
@@ -103,7 +104,7 @@ This repository contains my learning progress, practice projects, and school ass
                 <img src="images/girl.jpg" alt="">
             </div>
             <div class="text">
-                <p>It was a pleasure working with Noth1ng. He approaches every task with professionalism, attention to detail, and a deep understanding of both design and development. His ability to deliver well-structured, high-quality results made a significant impact on our project. He consistently communicates clearly, meets deadlines, and brings creative ideas that enhance the final outcome. Highly recommended.</p>                <br>
+                <p>"It was a pleasure working with Noth1ng. He approaches every task with professionalism, attention to detail, and a deep understanding of both design and development. His ability to deliver well-structured, high-quality results made a significant impact on our project. He consistently communicates clearly, meets deadlines, and brings creative ideas that enhance the final outcome. Highly recommended."</p>                <br>
                 <p><span>- Yumi</span></p>
             </div>
         </div>
@@ -141,5 +142,14 @@ This repository contains my learning progress, practice projects, and school ass
     <footer>
         <p>© 2025 Noth1ng. Based on an Under Ctrl YouTube tutorial, with minor visual tweaks and adjustments.</p>
     </footer>
+
+
+    <!---- JavaScript for Animation on scroll (AOS) ---->
+    <script src="aos/aos.js"></script>
+        <script>
+        AOS.init ({
+            once: false //true/false
+        })
+    </script>
 </body>
 </html>

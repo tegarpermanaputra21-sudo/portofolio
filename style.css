@@ -3,6 +3,10 @@
     --link-color: #4a76ee;
     --background-color: #eeeff1;
 }
+::selection{
+    color: var(--background-color);
+    background-color: #696969;
+}
 *{
     margin: 0;
     padding: 0;
@@ -204,6 +208,7 @@ nav .right a span{
     flex: 8;
 }
 .testimony-section .group span{
+    font-size: 15px;
     font-weight: 600;
 }
 .testimony-section .group .text p:last-child{
@@ -381,7 +386,7 @@ footer{
         font-size: 13px;
     }
     .testimony-section .group .text{
-        text-align: center;
+        text-align: justify;
         font-size: 14px;
     }
 
