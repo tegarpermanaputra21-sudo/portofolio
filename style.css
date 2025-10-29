@@ -29,16 +29,17 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 0px 50px;
-    height: 80px;
+    height: 90px;
 }
 nav .left a{
     color: var(--text-color);
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
 }
 nav .right a{
     color: var(--text-color);
     margin: 0 10px;
+    font-size: 16px;
 }
 nav .right a:last-child{
     color: var(--background-color);
@@ -57,24 +58,26 @@ nav .right a span{
     align-items: center;
     width: 90%;
     padding: 0 50px;
-    margin: 80px auto 200px;
+    margin: 100px auto;
     gap: 40px;
 }
 .hero-section .text{
     flex: 5;
 }
 .hero-section .text h2{
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 10px;
 }
 .hero-section .text p{
     width: 95%;
+    font-size: 15px;
 }
 .hero-section .text .links{
     margin-top: 25px;
 }
 .hero-section .text .links a{
     display: inline-block;
+    font-size: 14px;
     padding: 5px 10px;
     border: 2px solid var(--link-color);
     border-radius: 5px;
@@ -86,13 +89,16 @@ nav .right a span{
     color: var(--text-color);
     border: 2px solid var(--text-color);
 }
+.hero-section .text .links span{
+    font-size: 14px;
+}
 .hero-section .headshot{
     flex: 2;
     display: flex;
     justify-content: right;
 }
 .hero-section .headshot img{
-    width: 300px;
+    width: 260px;
     border-radius: 50%;
 }
 
@@ -100,12 +106,12 @@ nav .right a span{
 /* Content 2: Skills Section */
 .skills-section{
     padding: 0 50px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 .skills-section h2{
     text-align: center;
-    font-size: 35px;
-    margin-bottom: -10px;
+    font-size: 28px;
+    margin-bottom: -12px;
 }
 .skills-section .text{
     margin-bottom: 20px;
@@ -113,7 +119,15 @@ nav .right a span{
     margin: 20px auto;
     text-align: center;
 }
+.skills-section .text p{
+    text-align: center;
+    margin: 0 auto;
+    width: 85%;
+    font-size: 14px;
+}
 .skills-section .cells{
+    width: 85%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -122,7 +136,7 @@ nav .right a span{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 180px;
     padding: 10px 20px;
     margin: 10px;
     border: 1.5px solid #d3d3d3;
@@ -132,6 +146,9 @@ nav .right a span{
 }
 .skills-section .cells .cell:hover{
     border: 1.5px solid var(--text-color);
+}
+.skills-section .cells .cell span{
+    font-size: 13px;
 }
 .skills-section .cells .cell img{
     width: 30px;
@@ -145,11 +162,15 @@ nav .right a span{
 .testimony-section{
     padding: 0 50px;
     margin: 100px auto;
-    width: 90%;
+    width: 80%;
 }
 .testimony-section h2{
-    font-size: 35px;
-    margin-bottom: 20px;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1.5px solid black;
+    border-width: auto;
 }
 .testimony-section .group{
     display: flex;
@@ -161,20 +182,22 @@ nav .right a span{
     flex: 2;
 }
 .testimony-section .group .person-details img{
-    width: 200px;
+    width: 180px;
+    margin-top: 25px;
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 50%;
 }
-.testimony-section .group .person-details p{
-    font-weight: 600;
-}
-.testimony-section .group .person-details p:last-child{
-    font-weight: normal;
-}
 .testimony-section .group .text{
     padding-top: 50px;
+    font-size: 14px;
     flex: 8;
+}
+.testimony-section .group span{
+    font-weight: 600;
+}
+.testimony-section .group .text p:last-child{
+    font-weight: normal;
 }
 
 /* Content 4: Contact Section */
@@ -184,7 +207,7 @@ nav .right a span{
     width: 90%;
 }
 .contact-section h2{
-    font-size: 35px;
+    font-size: 28px;
 }
 .contact-section .group{
     display: flex;
@@ -251,6 +274,9 @@ nav .right a span{
     }
     .testimony-section .group{
         flex-direction: column;
+    }
+    .testimony-section .group .person-details img{
+        margin-top: 0px;
     }
     .testimony-section .group .text{
         padding: 0;
@@ -345,9 +371,6 @@ nav .right a span{
         font-size: 14px;
     }
     .contact-section .group form label{
-        font-size: 14px;
-    }
-    .contact-section .group form :no-button{
         font-size: 14px;
     }
 }
