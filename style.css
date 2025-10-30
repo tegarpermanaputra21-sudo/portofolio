@@ -156,7 +156,7 @@ nav .right a span{
     border: 1.5px solid #d3d3d3;
     border-radius: 5px;
     gap: 10px;
-    transition: 0.1s;
+    /* transition: 0.1s; */
 }
 .skills-section .cells .cell:hover{
     border: 1.5px solid var(--text-color);
@@ -218,7 +218,7 @@ nav .right a span{
 /* Content 4: Contact Section */
 .contact-section{
     padding: 0 50px;
-    margin: 100px auto 110px;
+    margin: 100px auto 150px;
     width: 90%;
 }
 .contact-section h2{
@@ -264,7 +264,7 @@ nav .right a span{
     border: none;
     height: 50px;
     cursor: pointer;
-    transition: 0.2s;
+    /* transition: 0.2s; */
 }
 .contact-section .group form button:hover{
     /* filter: brightness(.9);    untuk hover supaya warna awal lebih gelap*/
@@ -278,9 +278,8 @@ nav .right a span{
 footer{
     font-size: 12px;
     text-align: center;
-    padding: 25px 20px 20px;
-    color: var(--background-color);
-    background-color: var(--text-color);
+    color: var(--text-color);
+    padding: 20px;
 }
 
 @media (max-width: 850px) {
