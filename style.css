@@ -17,7 +17,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-
+    color: var(--text-color);
     background-color: var(--background-color);
     max-width: 1400px;
     margin: 0 auto;
@@ -41,9 +41,30 @@ nav .left a{
     font-weight: 600;
 }
 nav .right a{
+    position: relative;
+    display: inline-flex;
     color: var(--text-color);
     margin: 0 10px;
     font-size: 16px;
+}
+nav .right a:hover{
+    color: #444546;
+}
+nav .right a::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: var(--text-color);
+    transition: all .5s;
+}
+nav .right a:hover::before{
+    width: 100%;
+}
+nav .right a:last-child::before {
+    display: none;
 }
 nav .right a:last-child{
     color: var(--background-color);
@@ -55,9 +76,9 @@ nav .right a:last-child{
 }
 
 nav .right a:last-child:hover{
-    color: var(--text-color);
+    color: #444546;
     background-color: transparent;
-    border: 2px solid var(--text-color);
+    border: 2px solid #444546;
     border-radius: 5px;
 }
 nav .right a span{
@@ -116,6 +137,9 @@ nav .right a span{
     width: 260px;
     border-radius: 50%;
 }
+/* .hero-section .headshot:hover img{
+    transform: scale(1.05);
+} lagi masa maintance */
 
 
 /* Content 2: Skills Section */
