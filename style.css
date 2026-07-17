@@ -176,7 +176,6 @@ nav .right a span {
   align-items: center;
   width: 180px;
   padding: 10px 20px;
-  margin: 10px;
   border: 2px solid #d3d3d3;
   border-radius: 5px;
   gap: 10px;
@@ -401,10 +400,18 @@ footer {
   .skills-section .text p {
     font-size: 14px;
     width: 100%;
-    text-align: center;
+    text-align: justify;
+  }
+  .skills-section .cells {
+    display: flex;
+    gap: 10px;
+  }
+  .skills-section .cells .cell {
+    width: 100px;
   }
   .skills-section .cells .cell span {
     font-size: 14px;
+    display: none;
   }
 
   /* Content 3: Testimony Section */
